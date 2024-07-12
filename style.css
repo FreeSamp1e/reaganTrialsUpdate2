@@ -1,0 +1,161 @@
+
+.question {
+    text-align: center;
+
+    margin: 50px;
+    font-size: larger;
+    size: 300px;
+}
+
+.nickImg {
+    width: 250px;
+}
+
+.notIntro {
+    display: none;
+}
+
+.intro {
+    margin:auto;
+    margin-top: 40px;
+    text-align: center;
+    width: 330px;
+}
+
+.questionsAfterOne {
+    display: none;
+}
+
+.nickTriviaReward {
+    text-align: center;
+}
+
+.hardReward {
+    text-align: center;
+}
+
+
+.hardRewardImage {
+    width: 400px;
+}
+
+.mathReward {
+    text-align: center;
+}
+.mathRewardImage {
+    width: 600px;
+}
+
+.riddlesReward {
+    text-align: center;
+    
+}
+
+.friendsReward {
+    text-align: center;
+    max-width: 330px;
+    margin: auto;
+}
+
+.snakeReward {
+    text-align: center;
+    max-width: 330px;
+    margin: auto;
+}
+.sectionSix {
+  text-align: center;
+  max-width: 330px;
+  margin: auto;
+}
+.snakeIntro {
+    width: 330px;
+    text-align: center;
+    margin: auto;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans"); 
+  
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    outline: none; 
+    font-family: "Josefin Sans", 
+        sans-serif; 
+} 
+  
+body { 
+    background: #86db80; 
+} 
+
+/* Import Google font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  background: #293447;
+  box-shadow: 0 20px 40px rgba(52, 87, 220, 0.2);
+}
+.game-details {
+  color: #0056e1;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 20px 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.play-board {
+  border: dashed 5px lime;
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  display: grid;
+  background: #212837;
+  grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+}
+.play-board .food {
+  background: #FF003D;
+}
+.play-board .head {
+  background: #60CBFF;
+}
+
+.controls {
+  display: none;
+  justify-content: space-between;
+}
+.controls i {
+  padding: 25px 0;
+  text-align: center;
+  font-size: 1.3rem;
+  color: #B8C6DC;
+  width: calc(100% / 5);
+  cursor: pointer;
+  border-right: 1px solid #171B26;
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    width: 90vmin;
+    height: 115vmin;
+  }
+  .game-details {
+    font-size: 1rem;
+    padding: 15px 27px;
+  }
+  .controls {
+    display: flex;
+  }
+  .controls i {
+    padding: 15px 0;
+    font-size: 1rem;
+  }
+}
